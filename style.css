@@ -4,15 +4,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding-left: 5px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 
-p {
-    margin: 0;
+.name, .heading{
+    color:  rgb(13, 149, 144);;
 }
 
 /* Navigation Controls */
@@ -47,6 +46,7 @@ p {
 }
 
 /* Header */
+
 .header-container {
     background-image: url('main-bg.jpg');
     background-size: cover;
@@ -54,6 +54,7 @@ p {
     padding: 100px 20px;
     color: white;
     text-align: center;
+    background-color: #ffffff; /* Ensure header background color matches */
 }
 
 .header-right {
@@ -66,10 +67,6 @@ p {
     line-height: 1.1;
     margin-bottom: 10px;
     color: black;
-}
-
-.name {
-    color: #ff9800;
 }
 
 .header-tagline {
@@ -90,7 +87,7 @@ p {
 
 .btn1, .btn2 {
     display: inline-block;
-    background-color: #ff9800;
+    background-color:rgb(13, 149, 144);
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -99,7 +96,7 @@ p {
 }
 
 .btn1:hover , .btn2:hover {
-    background-color: #e68900;
+    background-color: #041c86; 
 }
 
 .btn-text1, .btn-text2 {
@@ -185,7 +182,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff9800; /* Skill background color */
+    background-color: rgb(13, 149, 144); /* Skill background color */
     padding: 8px 10px;
     border-radius: 5px;
     color: white;
@@ -196,7 +193,6 @@ p {
 /* Timeline Section */
 #education {
     padding: 60px 20px;
-    background-color: #f9f9f9;
     text-align: center;
 }
 
@@ -231,7 +227,6 @@ p {
 /* Projects Section */
 #projects {
     padding: 60px 20px;
-    background-color: #f9f9f9;
     text-align: center;
 }
 
@@ -355,17 +350,19 @@ p {
 }
 
 /* Footer */
-#contact {
+#contactus{
     padding: 15px;
-    background-color: #c6c3c3;
+    background-color: #c6c3c3; /* Greyish background color */
     color: black;
     text-align: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .con-heading {
     font-size: 30px;
     margin-bottom: 12px;
     line-height: 1.25;
+    text-decoration:double;
 }
 
 .contact-container {
@@ -384,29 +381,32 @@ p {
 
 .contact-item i {
     margin-right: 10px;
+    color: #041c86; ;
 }
 
 .contact-item a {
-    color: rgb(0, 0, 0);
+    color: black;
     text-decoration: none;
 }
 
 .contact-item a:hover {
     text-decoration: underline;
+    color: #041c86;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
     gap: 20px; /* Space between social icons */
+    margin-top: 10px;
 }
 
 .social-links a {
-    color: white;
+    color: #041c86; 
     font-size: 35px;
     text-decoration: none;
 }
 
 .social-links a:hover {
-    color: #ff9800; /* Change color on hover */
+    color: rgb(13, 149, 144);
 }
