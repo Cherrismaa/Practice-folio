@@ -46,7 +46,6 @@ p {
     background-color: #e0e0e0;
 }
 
-
 /* Header */
 .header-container {
     background-image: url('main-bg.jpg');
@@ -67,7 +66,6 @@ p {
     line-height: 1.1;
     margin-bottom: 10px;
     color: black;
-    padding: 0 15px 0 0;
 }
 
 .name {
@@ -75,9 +73,10 @@ p {
 }
 
 .header-tagline {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
     color: black;
+    font-weight: 600;
 }
 
 .header-about {
@@ -86,14 +85,14 @@ p {
     line-height: 1.5;
     color: black;
     text-align: justify;
-    padding: 0 10px 0 60px;
+    padding: 0 15px 0 60px;
 }
 
 .btn1, .btn2 {
     display: inline-block;
     background-color: #ff9800;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
@@ -120,6 +119,7 @@ p {
 .about h2 {
     font-size: 3.75rem;
     margin: 0 25px 20px 55px;
+    line-height: 1.1;
 }
 
 .about-content {
@@ -193,7 +193,6 @@ p {
     text-align: center;
 }
 
-
 /* Timeline Section */
 #education {
     padding: 60px 20px;
@@ -204,7 +203,7 @@ p {
 .edu-heading {
     font-size: 3.75rem;
     margin-bottom: 20px;
-    line-height: 1.1;
+    line-height: 1.25;
 }
 
 .timeline {
@@ -229,6 +228,7 @@ p {
     margin-bottom: 10px;
 }
 
+/* Projects Section */
 #projects {
     padding: 60px 20px;
     background-color: #f9f9f9;
@@ -239,6 +239,7 @@ p {
     margin: 5px 0 10px 0;
     font-size: 3.5rem;
     text-align: center;
+    line-height: 1.25;
 }
 
 .section-description {
@@ -331,75 +332,81 @@ p {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .projects {
+        width: calc(100% - 40px); /* Adjusted width for mobile view */
+        gap: 10px; /* Reduced gap between project boxes */
+        justify-content: center;
+        padding-left: 30px;
+    }
+
     .project {
-        flex: 0 0 90%; /* Reduce width of project boxes */
+        width: 80%; /* Reduce width of project boxes */
         margin: 10px auto; /* Center the project boxes */
     }
 
     .project-title, .project-description {
-        text-align: center; /* Center the text */
+        text-align: center;
     }
 
     .project-image img {
-        height: 150px;
-        width: 65%;
-    }
-
-    .projects{
-        width: 300px;
-        margin-left: 130px;
+        height: 150px; /* Adjusted image height */
+        width: 100%; /* Ensure the image fills the container */
     }
 }
 
-
-/* Contact Section */
+/* Footer */
 #contact {
-    padding: 60px 20px;
-    background-color: #f4e9e9;
-    color: rgb(0, 0, 0);
+    padding: 15px;
+    background-color: #c6c3c3;
+    color: black;
     text-align: center;
 }
 
 .con-heading {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 12px;
+    line-height: 1.25;
 }
 
-.con-desc {
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-
-.con-form {
+.contact-container {
     max-width: 600px;
     margin: auto;
 }
 
-.con-form input, .con-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.contact-info {
+    margin-bottom: 5px;
 }
 
-.con-form input[type="submit"] {
-    background-color: #ff9800;
+.contact-item {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+.contact-item a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between social icons */
+}
+
+.social-links a {
     color: white;
-    border: none;
-    cursor: pointer;
-    padding: 15px;
-    font-size: 16px;
+    font-size: 35px;
+    text-decoration: none;
 }
 
-.con-form input[type="submit"]:hover {
-    background-color: #e68900;
-}
-
-/* Footer */
-.footer {
-    background-color: #041c86;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.social-links a:hover {
+    color: #ff9800; /* Change color on hover */
 }
